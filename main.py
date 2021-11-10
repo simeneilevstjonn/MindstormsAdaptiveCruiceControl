@@ -19,7 +19,7 @@ left_motor = Motor(Port.B)
 right_motor = Motor(Port.C)
 
 # Create instance of acc class
-adaptivecc = AdaptiveCruiceControl(DriveBase(left_motor, right_motor, wheel_diameter=55.5, axle_track=104), UltrasonicSensor(Port.S4), ev3.speaker)
+adaptivecc = AdaptiveCruiseControl(DriveBase(left_motor, right_motor, wheel_diameter=55.5, axle_track=104), UltrasonicSensor(Port.S4), ev3.speaker)
 
 # Start driving at 200 mm/s
 adaptivecc.drive(200)

@@ -17,7 +17,7 @@ distancing = 3
 track_threshold = 10
 
 # ACC class
-class AdaptiveCruiceControl:
+class AdaptiveCruiseControl:
     # Constructor
     def __init__(self, drive_base, ultrasonic_sensor, speaker):
         # Store variables
@@ -51,7 +51,7 @@ class AdaptiveCruiceControl:
         else:
             return tracked_diff + self.speed
 
-    # Drive method. Call this to start cruice control
+    # Drive method. Call this to start cruise control
     async def drive(self, speed):
          # Start driving at given speed
         self.drive_base.drive(speed, 0)
